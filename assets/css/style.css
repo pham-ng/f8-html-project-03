@@ -151,10 +151,10 @@ a{
 
 }
 
-.action__login{
+.header-action__login{
     display: inline-block;
     
-
+    margin-right: 7px;
     min-width: 104px;
     height: 44px;
     padding: 0 20px;
@@ -172,7 +172,7 @@ a{
     font-weight: 400;
 }
 
-.action__signup{
+.header-action__signup{
     height: 44px;
     min-width: 104px;
     line-height: 44px;
