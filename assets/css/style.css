@@ -151,6 +151,27 @@ a{
 
 }
 
+.action__login{
+    display: inline-block;
+    
+
+    min-width: 104px;
+    height: 44px;
+    padding: 0 20px;
+    flex-shrink: 0;
+    line-height: 44px;
+
+    border-radius: 99px;
+    border: 1px solid #2dcf3b;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
 .action__signup{
     height: 44px;
     min-width: 104px;
