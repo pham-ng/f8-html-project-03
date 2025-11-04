@@ -49,6 +49,30 @@ a{
     opacity: 0.9;
     cursor: pointer;
 }
+
+.section-heading{
+    color: #10375C;
+    text-align: center;
+    font-family: Sora;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 120% */
+    letter-spacing: -1px;
+}
+
+.section-desc{
+    margin-top: 18px;
+    color: #575F66;
+    text-align: center;
+    font-family: Sora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 166.667% */
+}
+
+
 /*Header*/
 
 .header{
@@ -56,6 +80,9 @@ a{
     background: var(--header-bg);
     padding-top: 30px;
 }
+
+
+
 .logo{
     font-size: 1rem;
     position: relative;
@@ -198,9 +225,9 @@ a{
 .hero__heading{
     color: #FFF;
     font-family: Sora;
-    font-size: 70px;
+    font-size: 60px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 550;
     line-height: 80px; /* 114.286% */
     letter-spacing: -1.4px;
 }
@@ -249,11 +276,117 @@ a{
 
 .hero__img:first-child{
     position: relative;
-    margin-right: -6px;
+    margin-right: -3px;
     
 }
 
 .hero__img:last-child{
-    width: 290px;
+    width: 280px;
     height: 410px;
+}
+
+
+
+/*Services*/
+/* Khung icon */
+.service-item__icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff; /* ban đầu nền trắng */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Icon mặc định: màu đen */
+  .service-item__icon {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    filter: brightness(0); /* icon đen */
+    transition: filter 0.3s ease;
+  }
+  
+  /* Khi hover: đổi nền xanh + icon trắng */
+  .service-item:hover .service-item__icon-wrap {
+    background-color: #2dcf3b;
+  }
+  
+  .service-item:hover .service-item__icon {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(90%) saturate(600%) hue-rotate(20deg) brightness(105%) contrast(100%);
+  }  
+
+.service{
+    padding: 170px 0;
+}
+
+.service__heading,
+.service__desc{
+    text-align: center;
+}
+.service__desc{
+    max-width: 468px;
+    margin-left: auto;  
+    margin-right: auto;  
+}
+
+.service__img{
+    width: 570px;
+    height: 650px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service__row{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/*service item*/
+.service-item{
+    width: 470px;
+    padding: 22px;
+    display: flex;
+    flex-shrink: 0;
+    background: #FFFFFF;
+}
+
+
+.service-item:hover{
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
+    position: relative;
+    cursor: pointer;
+}
+
+.service-item__body{
+    margin-left: 20px;
+}
+
+.service-item__heading{
+    color: #10375C;
+    font-family: Sora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.service-item__desc{
+    margin-top: 4px;
+    color: #575F66;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 175% */
+}
+
+.service__list{
+    margin-bottom: 10px;
 }
