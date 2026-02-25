@@ -498,6 +498,10 @@ a{
 
 }
 
+
+.section-desc{
+    text-align: left;
+}
 /*Member*/
 
 .member{
@@ -593,4 +597,51 @@ a{
     background-color: #2dcf3b;
     color:#fff;
     cursor: pointer;
+}
+
+/*Install*/
+.install{
+    margin-top: 185px;
+}
+
+.install__inner{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    border-radius: 4px;
+    background: #008046;
+}
+.install__img{
+    display:block;
+    width: 284px;
+    height: 522px;
+    margin-top: -95px;
+    object-fit: cover;
+}
+
+.install__content{
+    width: 50%;
+
+}
+
+.install__heading, .install__desc{
+    color:#fff;   
+    text-align: left;
+}
+
+.install__heading{
+    max-width: 489px;
+}
+
+.install__row{
+    margin-top: 38px;
+    column-gap: 28px;
+
+}
+
+.install__btn{
+    outline:none;
+    border:none;
+    background: transparent;
 }
