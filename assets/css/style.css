@@ -725,7 +725,7 @@ a{
 
 .news-item__heading{
     color: #0B5C36;
-    font-family: Sora;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -735,7 +735,7 @@ a{
 .news-item__desc{
     margin-top: 10px;
     color: #575F66;
-    font-family: Sora;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -745,11 +745,51 @@ a{
 .news-item__more{
     display:inline-block;
     margin-top: 12px;
-    color: #2E80CE;
+    color: #10375C;
     font-family: Sora;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
 
+.news-item__more:hover{
+    color: #2E80CE;
+}
+
+
+/*Appointment*/
+.appointment{
+    margin-top: 85px 0 170px;
+}
+
+.appointment__inner{
+    background:  #F6FBFF;
+    padding: 100px 178px;
+    text-align: center;
+    border-radius: 4px;
+}
+.appointment__heading{
+    position: relative;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.appointment__heading::after{
+    position: absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    display: block;
+    bottom:0;
+    content: "";
+    width: 136px;
+    height: 2px;
+    background-color: #008046;
+}
+
+.appointment__desc{
+    max-width: 617px;
+    text-align: center;
+    margin:18px auto 38px;
 }
