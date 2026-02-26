@@ -71,8 +71,12 @@ a{
     font-weight: 300;
     line-height: 30px; /* 166.667% */
 }
-
-
+.section-desc.work__desc{
+    text-align: center;
+}
+.service__desc.section-desc{
+    text-align: center;
+}
 /*Header*/
 
 .header{
@@ -222,15 +226,21 @@ a{
     flex-grow: 1;
 }
 
-.hero__heading{
-    color: #FFF;
+.hero__heading {
+    /* Thay đổi mã màu tại đây */
+    color: #ffc52c; 
+    
+    /* Giữ nguyên các thuộc tính khác của bạn */
     font-family: Sora;
-    font-size: 60px;
+    font-size: 55px;
     font-style: normal;
     font-weight: 550;
-    line-height: 80px; /* 114.286% */
+    line-height: 80px;
     letter-spacing: -1.4px;
+    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
+
 
 .hero__desc{
     margin-top: 22px;
@@ -602,6 +612,8 @@ a{
 /*Install*/
 .install{
     margin-top: 185px;
+    background: #008046; /* Màu xanh chủ đạo của Bạch Mai */
+      /* Để xử lý ảnh điện thoại nhô lên không bị lỗi */
 }
 
 .install__inner{
@@ -792,4 +804,138 @@ a{
     max-width: 617px;
     text-align: center;
     margin:18px auto 38px;
+}
+
+/*Footer*/
+.footer{
+    padding-top:100px ;
+    background: #008046;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.footer__row{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc{
+    color: #A9B3BB;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.footer__heading{
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+}
+
+.footer__list{
+    margin-bottom: 28px;
+
+}
+
+.footer__link{
+    color: #A9B3BB;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
+    
+}
+.footer__link:hover{
+    text-decoration: underline;
+    color:#fff
+}
+
+.footer__item{
+    margin-top: 10px;
+}
+
+.footer__social{
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 28px;
+}
+
+.footer__social-btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    color: #2E80CE;
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover{
+    color: #fff;
+    background: #2E80CE;
+    cursor: pointer;
+}
+
+.footer-form{
+    display: flex;
+    column-gap:12px;
+    margin-top: 10px;
+}
+
+.footer-form__input{
+    padding: 0 10px;
+    width: 212px;
+    height: 46px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    color:#fff;
+    background: transparent;
+    
+}
+
+.footer-form__input::placeholder{
+    color: #9CA8B1;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
+}
+
+.footer-form__submit{
+    min-width: 108px;
+    height:46px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 1.4rem;
+
+}
+
+.footer__copyright{
+    border-top:1px solid #0df133;
+    padding: 28px 0 42px;
+
+}
+
+.footer__copyright-text{
+    color: #AAB3BA;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
 }
